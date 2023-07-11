@@ -1,0 +1,19 @@
+# pull the official base image
+FROM node:14.16.0-alpine3.10
+# set working direction
+WORKDIR /app
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+# install application dependencies
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm i
+# add app
+COPY . ./
+# start app
+CMD ["npm", "start"]
+
+#working
+#docker build -f Docker -t react-ui:kyc-ui .
+#docker run -it -p 3000:3000 react-ui:kyc-ui
+#http://localhost:3000/
