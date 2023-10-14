@@ -37,6 +37,7 @@ class UserProfile extends Component {
     
 
     render() {
+      this.getData();
       const { error, isLoaded, loginUsers } = this.state;
       //console.log('UserProfile.render: '+error);
       if (error) {
