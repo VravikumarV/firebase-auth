@@ -1,11 +1,28 @@
 const router = require('express').Router();
 const mongoose = require('mongoose');
 const connection =  require('mongoose').connection;
+
+const fs = require("fs");
+
+
 console.log('Controller:  '+connection);
 
     let mProfilesModel = require('../models/mProfiles');
 
-        router.route('/').get(function (req, res) {
+    router.route('/').get(function (req, res) {
+      //  This is working, http://localhost:8181/api/signup/mock/userprofiles/
+      fs.readFile("./SAN1001.json", "utf8", (error, data) => {
+        if (error) {
+          console.log(error);
+          return;
+        }
+        console.log(JSON.parse(data));
+        res.status(200).json(data);
+      });
+  });
+
+
+      router.route('/').get(function (req, res) {
             //  This is working, http://localhost:8181/api/signup/userprofiles/
             const estimatedDocumentCount = mProfilesModel.estimatedDocumentCount();
               console.log('there are %d estimatedDocumentCount', estimatedDocumentCount);

@@ -1,0 +1,93 @@
+{
+	"profileId":	"SAN1001",
+	"lastLogin":	"13-Oct-2023 18:00",	
+	"basicinfo": {
+		"name":  "O. Sampath Kumar",
+		"fatherName":  "Srinadh",
+		"motherName":  "Parvathi Devi",
+		"familyName":  "Srisaila",
+		"maidenName":  "",
+		"gothram":  "Kashyap",
+		"sakha":  "Niyogi",
+		"tob":  "14:12",
+		"dob":  "12-Jan-1995",
+		"pob":  "Hyderabad",
+		"birthStar":  "Anuradha",
+		"height":  "5.3",
+		"education":  "B.E",
+		"jobOccupation":  "Civil Engineer",
+		"company":  "L&T",
+		"salaray":  "25 Lakhs",
+		"areaBelongsTo":  "Andhra",
+		"requirements":  "Well Settled",
+		"contactNumber":  "92347 83847",
+		"altContactNumber":  "34957 39873",
+		"siblings": "1ES1YB1YS"
+	},
+	"preferences":
+	{
+			"religion":	"Hindhu,Jain",	
+			"caste":	"Brahmin,Kshathriya,Jain,Vysya",	
+			"gothram":	"ExceptMine",	
+			"language":	"Hindi,Telugu,Kannada",	
+			"diet":	"Veg,Vegan",
+			"location":	"India,USA",	
+			"qualification":	"Masters,Engineering",
+			"profession":	"Banking, IT, Medicine",
+			"income":	"20 Lakhs Above"
+	},
+	"viwedByMe":	[
+		{
+			"profileId":	"SAN1002",
+			"dateViewed":	"23-Jan-2023"
+		},
+		{
+			"profileId":	"SAN1011",
+			"dateViewed":	"30-Aug-2023"
+		}
+	],
+	"viwedMe":	[
+		{
+			"profileId":	"SAN1011",
+			"dateViewed":	"12-Sep-2023"
+		},
+		{
+			"profileId":	"SAN1121",
+			"dateViewed":	"02-Dec-2022"
+		}
+	],
+	"comunications":	[
+		{
+			"id":	"SAN1001-C0001",
+			"toProfileId": "SAN1011",
+			"messages": [
+				{
+					"messageId": "C0001-M001",
+					"message": "Hi SAN1011",
+					"messageViewed": "Yes"
+				},
+				{
+					"messageId": "C0001-M002",
+					"message": "We interested in your profile. It would be great if you share your thoughts!",
+					"messageViewed": "No"				
+				}
+			]
+		},
+		{
+			"id":	"SAN1001-C0002",
+			"toProfileId": "SAN1021",
+			"messages": [
+				{
+					"messageId": "C0001-M001",
+					"message": "We interested in your profile. It would be great if you share your thoughts!",
+					"messageViewed": "No"
+				},
+				{
+					"messageId": "C0001-M002",
+					"message": "Could you let us know your convienent time to have an intial call",
+					"messageViewed": "No"				
+				}
+			]
+		}		
+	]
+}
