@@ -1,4 +1,5 @@
 
+//  docker-compose will build the images and push to local docker hub and start the services
 docker-compose up -d --build
 
 MongoDB:   https://www.mongodb.com/compatibility/docker

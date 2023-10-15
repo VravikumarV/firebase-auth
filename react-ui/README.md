@@ -66,3 +66,30 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+MUI for React Web:
+
+    https://mui.com/material-ui/react-text-field/
+    Avtaar, Avtaar Group    - To show pic of indvidual profile, group the avtaar - Shortlisted, Interest Received or Sent
+    Card    - Image with Basic Bio - Introduction
+    Stack & Divider  -  Divide line at each section: Life Style, Preferences, Career & Qualification, Family, Astro  
+    Image List  - STandard, Quilted, Title Bar, Custom
+    Box -   Life Style, Preferences, Career & Qualification, Family, Astro
+    Box, Flex Box - with display grid and grid template 
+    Chip, 
+    Badge - Style Badge ( Like - Email icon with no of new emails, No of profiles SHortlisted, visited, favourite )
+    Adorements  - Kg, Ft, Lakhs, show password icon - prefix for an in put control
+
+
+    Horizontal Profile Images Listing
+    https://stackoverflow.com/questions/63815243/trying-to-have-a-horizontal-scroll-with-overflowx-in-mui-but-it-does-not-work
+    https://stackoverflow.com/questions/tagged/material-ui
+
+
+    https://github.com/mui/material-ui/tree/v5.14.13/docs/data/material/getting-started/templates/checkout
+    Edit Form:  Basic UI Component, Fragment, StyledComponent, Autocomplete, 
+
+
+React Native:

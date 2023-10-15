@@ -2,29 +2,24 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
 
+import FileUpload from '../../commons/FileUpload';
 import UserProfile from "../business/User/UserProfile";
 import Demographics from "../business/User/Demographics";
-import FileUpload from '../../commons/FileUpload';
+import ImageProfileCards from '../business/User/ImageProfileCards';
+import RowwiseImageList from '../business/User/RowwiseImageList';
+import PreferencesTabFilters from '../business/User/PreferencesTabFilters';
+import ProfileAvatarGrouping from '../business/User/ProfileAvatarGrouping';
+
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import firebase from "firebase";
 
-import AccountCircle from '@material-ui/icons/AccountCircle'
 
 const drawerWidth = 240;
 
@@ -111,7 +106,38 @@ const routes = [
       path: "/uploadfiles",
         sidebar: () => <div><FileUpload/></div>,
       main: () => <h2>Upload Files</h2>
-    }
+    },
+    {
+      path: "/ProfileAvatarGrouping",
+      exact: true,
+      sidebar: () => <div><ProfileAvatarGrouping/></div>,
+      main: () => <h2>ProfileAvatarGrouping</h2>
+    },
+    {
+      path: "/PreferencesTabFilters",
+      sidebar: () => <div><PreferencesTabFilters/></div>,
+      main: () => <h2>PreferencesTabFilters</h2>
+    },
+    {
+      path: "/ProfileImagesSingleRowListing",
+      sidebar: () => <div>ProfileImagesSingleRowListing</div>,
+      main: () => <h2>ProfileImagesSingleRowListing</h2>
+    },
+    {
+        path: "/RowwiseImageList",
+          sidebar: () => <div><RowwiseImageList/></div>,
+        main: () => <h2>RowwiseImageList</h2>
+      },
+      {
+        path: "/ImageProfileCards",
+        sidebar: () => <div><ImageProfileCards/></div>,
+        main: () => <h2>ImageProfileCards</h2>
+      },
+      {
+        path: "/ProfileListing",
+        sidebar: () => <div>ProfileListing</div>,
+        main: () => <h2>ProfileListing</h2>
+      }    
 ];
 
 
@@ -161,6 +187,24 @@ export default function SideMenu() {
             </li>
             <li>
               <Link to="/uploadfiles">Upload Files</Link>
+            </li>
+          <li>
+              <Link to="/profileListing">Profile Listing</Link>
+            </li>
+            <li>
+              <Link to="/ImageProfileCards">Profile Cards</Link>
+            </li>
+            <li>
+              <Link to="/RowwiseImageList">Rowwise ImageList</Link>
+            </li>
+            <li>
+              <Link to="/ProfileImagesSingleRowListing">Images SingleRow Listing</Link>
+            </li>
+            <li>
+              <Link to="/PreferencesTabFilters">PreferencesTabFilters</Link>
+            </li>
+            <li>
+              <Link to="/ProfileAvatarGrouping">ProfileAvatarGrouping</Link>
             </li>
           </ul>
       </Drawer>

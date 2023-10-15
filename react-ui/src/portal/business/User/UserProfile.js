@@ -19,7 +19,7 @@ class UserProfile extends Component {
     }
 
      getData() {
-      const response =  fetch('http://localhost:8181/api/signup/userprofiles').then(response => {
+      const response =  fetch('http://localhost:8181/api/signup/userprofiles/').then(response => {
           return response.json();
         });
         console.log('Response from server is :  n '+response);

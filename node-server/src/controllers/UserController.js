@@ -9,15 +9,17 @@ console.log('Controller:  '+connection);
 
     let mProfilesModel = require('../models/mProfiles');
 
-    router.route('/').get(function (req, res) {
-      //  This is working, http://localhost:8181/api/signup/mock/userprofiles/
+    router.route('/mock').get(function (req, res) {
+      //  This is working, http://localhost:8181/api/signup/userprofiles/mock
       fs.readFile("./SAN1001.json", "utf8", (error, data) => {
         if (error) {
           console.log(error);
           return;
         }
         console.log(JSON.parse(data));
-        res.status(200).json(data);
+        res.status(200).json(JSON.parse(data));
+        //res.status(200).json(JSON.stringify(data, null, 2));
+
       });
   });
 
