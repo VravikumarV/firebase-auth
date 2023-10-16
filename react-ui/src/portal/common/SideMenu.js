@@ -11,10 +11,12 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import FileUpload from '../../commons/FileUpload';
 import UserProfile from "../business/User/UserProfile";
 import Demographics from "../business/User/Demographics";
-import ImageProfileCards from '../business/User/ImageProfileCards';
+import ProfileCardWithVerImg from '../business/User/ProfileCardWithVerImg';
+import ProfileCardWithHorImg from '../business/User/ProfileCardWithHorImg';
 import RowwiseImageList from '../business/User/RowwiseImageList';
 import PreferencesTabFilters from '../business/User/PreferencesTabFilters';
 import ProfileAvatarGrouping from '../business/User/ProfileAvatarGrouping';
+import ProfileListing from '../business/User/ProfileListing';
 
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -129,13 +131,18 @@ const routes = [
         main: () => <h2>RowwiseImageList</h2>
       },
       {
-        path: "/ImageProfileCards",
-        sidebar: () => <div><ImageProfileCards/></div>,
-        main: () => <h2>ImageProfileCards</h2>
+        path: "/ProfileCardWithVerImg",
+        sidebar: () => <div><ProfileCardWithVerImg/></div>,
+        main: () => <h2>ProfileCard - H</h2>
+      },
+      {
+        path: "/ProfileCardWithHorImg",
+        sidebar: () => <div><ProfileCardWithHorImg/></div>,
+        main: () => <h2>ProfileCard - V</h2>
       },
       {
         path: "/ProfileListing",
-        sidebar: () => <div>ProfileListing</div>,
+        sidebar: () => <div><ProfileListing/></div>,
         main: () => <h2>ProfileListing</h2>
       }    
 ];
@@ -192,7 +199,10 @@ export default function SideMenu() {
               <Link to="/profileListing">Profile Listing</Link>
             </li>
             <li>
-              <Link to="/ImageProfileCards">Profile Cards</Link>
+              <Link to="/ProfileCardWithHorImg">H Profile Card</Link>
+            </li>
+            <li>
+              <Link to="/ProfileCardWithVerImg">V Profile Card</Link>
             </li>
             <li>
               <Link to="/RowwiseImageList">Rowwise ImageList</Link>

@@ -18,8 +18,15 @@
 .env.test.local
 .env.production.local
 
+.Imp
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 node-server/*
+node-server/node_modules/*
 react-ui/src/images/SAN1001/*.jpg
+react-ui/node_modules/*
+react-ui/public/images/*
+react-ui/src/portal/business/User/images/SAN1001/*
+react-ui/src/portal/business/User/mocks/SAN1001.json
+react-ui/Improvisations.txt

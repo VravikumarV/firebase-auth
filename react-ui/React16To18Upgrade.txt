@@ -1,0 +1,97 @@
+
+Error:  
+  PUBLIC
+  Questions
+  Tags
+  Users
+  Companies
+  COLLECTIVES
+  Explore Collectives
+  LABS
+  Discussions
+  TEAMS
+  Stack Overflow for Teams – Start collaborating and sharing organizational knowledge. 
+  Error message "error:0308010C:digital envelope routines::unsupported"
+
+Fix:  Enable legacy OpenSSL provider.
+On PowerShell:
+
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+
+
+https://github.com/firebase/firebaseui-web-react    [Good]
+
+PS C:\Users\91950\Documents\Techgaints\workspace\firebase-auth\react-ui> npm update --save react
+
+up to date, audited 1764 packages in 10s
+
+65 packages are looking for funding
+  run `npm fund` for details
+
+105 vulnerabilities (1 low, 43 moderate, 51 high, 10 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+PS C:\Users\91950\Documents\Techgaints\workspace\firebase-auth\react-ui> npm install react react-dom
+npm WARN deprecated ini@1.3.5: Please update to ini >=1.3.6 to avoid a prototype pollution issue
+npm WARN deprecated flatten@1.0.3: flatten is deprecated in favor of utility frameworks such as lodash.
+npm WARN deprecated request-promise-native@1.0.8: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated @hapi/bourne@1.3.2: This version has been deprecated and is no longer supported or maintained
+npm WARN deprecated @hapi/topo@3.1.6: This version has been deprecated and is no longer supported or maintained
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated har-validator@5.1.3: this library is no longer supported
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated left-pad@1.3.0: use String.prototype.padStart()
+npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated sane@4.1.0: some dependency vulnerabilities fixed, support for node < 10 dropped, and newer ECMAScript syntax/features added
+npm WARN deprecated eslint-loader@3.0.3: This loader has been deprecated. Please use eslint-webpack-plugin
+npm WARN deprecated @hapi/address@2.1.4: Moved to 'npm install @sideway/address'
+npm WARN deprecated html-webpack-plugin@4.0.0-beta.11: please switch to a stable version
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.      
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+npm WARN deprecated @hapi/joi@15.1.1: Switch to 'npm install joi'
+npm WARN deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+npm WARN deprecated @material-ui/styles@4.11.5: Material UI v4 doesn't receive active development since September 2021. See the guide https://mui.com/material-ui/migration/migration-v4/ to upgrade to v5.
+npm WARN deprecated core-js@1.2.7: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated material-ui@0.20.2: You can now upgrade to @material-ui/core
+npm WARN deprecated core-js@2.6.11: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated @material-ui/core@4.12.4: Material UI v4 doesn't receive active development since September 2021. See the guide https://mui.com/material-ui/migration/migration-v4/ to upgrade to v5.
+
+added 1763 packages in 1m
+
+65 packages are looking for funding
+  run `npm fund` for details
+PS C:\Users\91950\Documents\Techgaints\workspace\firebase-auth\react-ui> 
+
+Firebase upgrade from 6 to v9:
+ https://travis.media/how-to-use-firebase-with-react/
+
+
+    
+https://www.geeksforgeeks.org/material-ui-typography/   Image with Typography Next to it
+
+https://legacy.reactjs.org/blog/all.html/
+
+https://react.dev/blog/2022/03/29/react-v18
+
+https://react.dev/blog/2022/03/08/react-18-upgrade-guide
+
+
+npm install -g react-devtools
+
+******************************************************** Improvizations
+
+Referrring images in public / private folder of the project <img src.../>
