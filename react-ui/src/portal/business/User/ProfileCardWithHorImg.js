@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -31,6 +30,19 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
+const cardStyles = makeStyles((theme) => ({
+  Card: {
+    width: '100%',
+    height: '70%',
+    margin: 'auto'
+  },
+  Media: {
+    width: '100%',
+    height: '25%',
+    objectFit: 'contain'
+  }
+}));
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -47,13 +59,14 @@ const useStyles = makeStyles((theme) => ({
 export default function ImageProfileCards() {
   const [expanded, setExpanded] = React.useState(false);
   const classes = useStyles();
+  const cardClasses = cardStyles();
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className={cardClasses.Card} >
       <CardHeader
         avatar={
           <Avatar alt={profileObj.profileId} src='/images/SAN1001/SAN1001_4.jpeg' className={classes.large} />
@@ -66,9 +79,8 @@ export default function ImageProfileCards() {
         title={profileObj.profileId}
         subheader="September 14, 2016"
       />
-      <CardMedia
+      <CardMedia className={cardClasses.Media} 
         component="img"
-        height="594"
         image='/images/SAN1001/SAN1001_5.jpeg'
         alt={profileObj.profileId}
       />

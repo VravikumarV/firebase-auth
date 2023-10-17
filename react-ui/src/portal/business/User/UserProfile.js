@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 
-import {TableContainer, Table, TableBody, TableHead, TableRow, TableCell} from '@material-ui/core';
-import Paper from '@material-ui/core/Paper';
-import { Typography } from '@material-ui/core';
-import ReadOnlyDataTable from '../../../commons/ReadOnlyDataTable';
 import CollapsibleTable from '../../../commons/CollapsibleTable';
 
 class UserProfile extends Component {

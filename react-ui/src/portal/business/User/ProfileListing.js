@@ -12,7 +12,6 @@ import Divider from '@material-ui/core/Divider';
 import Chip from '@material-ui/core/Chip';
 import SearchIcon from '@material-ui/icons/Search';
 import Icon from '@material-ui/core/Icon';
-import { green } from '@material-ui/core/colors';
 
 import * as profileObj from './mocks/SAN1001.json';
 

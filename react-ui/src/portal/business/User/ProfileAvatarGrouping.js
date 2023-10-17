@@ -1,6 +1,4 @@
 import * as React from 'react';
-//import Avatar from '@mui/material/Avatar';
-//import AvatarGroup from '@mui/material/AvatarGroup';
 
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';

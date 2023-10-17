@@ -8,10 +8,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { TextField, RadioGroup, Radio, FormControl, FormLabel, FormControlLabel, MenuItem } from '@material-ui/core';
 
-
-import clsx from 'clsx';
-
-
 const bodyType = [
     {
         label: 'Fat',

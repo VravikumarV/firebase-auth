@@ -3,11 +3,26 @@ import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItem';
 import ListSubheader from '@material-ui/core/ListSubheader';
-//import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
-//import InfoIcon from '@mui/icons-material/Info';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
+  imageList: {
+    width: 500,
+    height: 450,
+  },
+}));
 
 export default function RowwiseImageList() {
+  const classes = useStyles();
+
   return (
     <ImageList sx={{ width: 500, height: 450 }}>
       <ImageListItem key="Subheader" cols={2}>
@@ -16,7 +31,6 @@ export default function RowwiseImageList() {
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
             src={item.img}
             alt={item.title}
             loading="lazy"
