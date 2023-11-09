@@ -95,3 +95,5 @@ npm install -g react-devtools
 ******************************************************** Improvizations
 
 Referrring images in public / private folder of the project <img src.../>
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Fill_a_box_with_an_image
